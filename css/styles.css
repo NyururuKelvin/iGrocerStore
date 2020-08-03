@@ -13,6 +13,12 @@ h1{
     height: 80px;
   }
 .partners{
-    margin-top: 2%;
+    margin-top: 1%;
     text-align: center;
 }
+.footer{
+    padding: 1%;
+  }
+  .foot{
+    border-left: solid rgb(10, 10, 10) 1px;
+  }
