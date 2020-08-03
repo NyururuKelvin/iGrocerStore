@@ -8,3 +8,11 @@ h1{
     background-size: cover;
     height: 100vh;
 }
+.partners img{
+    width: 120px;
+    height: 80px;
+  }
+.partners{
+    margin-top: 2%;
+    text-align: center;
+}
