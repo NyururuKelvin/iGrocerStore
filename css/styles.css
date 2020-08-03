@@ -1,0 +1,10 @@
+h1{
+    margin-top: 20%;
+    text-align: center;
+    color: white;
+}
+.home{
+    background-image: url('../images/photo-1571150074595-78b9736a6fd4.jpeg');
+    background-size: cover;
+    height: 100vh;
+}
