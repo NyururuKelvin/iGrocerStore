@@ -28,3 +28,7 @@ h2 span{
   .foot{
     border-left: solid rgb(10, 10, 10) 1px;
   }
+
+  .how{
+    background-color: rgb(74, 241, 144);
+}
