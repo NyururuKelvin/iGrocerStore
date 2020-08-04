@@ -19,17 +19,28 @@ h2{
     margin-top: 20%;
     text-align: center;
     color: white;
-    font-family: 'PT Sans', sans-serif;
-    text-shadow: rgb(73, 175, 41) 4px 4px 4px;
+    font-family: 'Mulish', sans-serif;
+    font-style: italic;
+    /* text-shadow: rgb(73, 175, 41) 4px 4px 4px; */
     
 }
 h2 span{
-    color: rgb(96, 245, 10);
+    color: rgb(234, 241, 234);
 }
 .home{
-    background-image: url('../images/photo-1571150074595-78b9736a6fd4.jpeg');
+    background-image: url(../images-cereals/MainCerial1.jpg);
     background-size: cover;
     height: 100vh;
+    width: 100%;
+    /* content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%; */
+	background-color: black;
+	/* opacity: .7;
+	z-index: -1; */
 }
 .partners img{
     width: 120px;
