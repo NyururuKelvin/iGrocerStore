@@ -31,4 +31,8 @@ h2 span{
 
   .how{
     background-color: rgb(74, 241, 144);
+    text-align: center;
+}
+.how img{
+  width: 100px;
 }
