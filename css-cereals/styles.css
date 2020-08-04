@@ -11,9 +11,9 @@ body {
     overflow-x: hidden;
 }
 
-#cart-info{
+/* #cart-info{
     margin-top: 5%;
-}
+} */
 
 .img-container img{
     width: 100%;
@@ -33,9 +33,9 @@ h2 span{
     color: rgb(234, 241, 234);
 }
 .home{
-    background-image: url(../images-cereals/MainCerial1.jpg);
+    background-image: url(../images-cereals/BGMain1.jpg);
     background-size: cover;
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     /* content: '';
 	position: absolute;
@@ -68,6 +68,7 @@ h2{
 .wrapper{
     width: 705px;
     padding: 20px;
+    text-align: inherit;
 }
 h1{
     display: inline-block;
@@ -105,10 +106,10 @@ button:focus{
     background-color: crimson;
 }
 
-button:hover{
+/* button:hover{
     background-color: crimson;
     display: inline;
-}
+} */
 
 #store-item-name, .store-item-value{
       color: rgb(17, 143, 17);
