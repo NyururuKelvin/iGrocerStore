@@ -1,5 +1,5 @@
 h1{
-    margin-top: 25%;
+    margin-top: 10%;
     text-align: center;
     color: white;
     font-family: 'PT Sans', sans-serif;
@@ -75,4 +75,18 @@ body{
 }
 .g{
   color: green;
+}
+
+#cart-info{
+  margin-top: 10%;
+  background-color: ivory;
+  align-items: right;
+}
+
+.stores img{
+  height: 100px;
+  width: 100%;
+}
+.store{
+  display: none;
 }
