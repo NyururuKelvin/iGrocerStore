@@ -16,4 +16,11 @@ $(document).ready(function(){
     $('.deal').mouseleave(function(){
         $(this).find('button').hide();
     })
+
+    $('.img-container').mouseenter(function(){
+        $(this).find('.store').show();
+    })
+    $('.img-container').mouseleave(function(){
+        $(this).find('.store').hide();
+    })
 })

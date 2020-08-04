@@ -28,6 +28,9 @@ h1 span:nth-child(2){
 .partners{
     margin-top: 1%;
     text-align: center;
+    color: green;
+    font-weight: bolder;
+    font-size: xx-large;
 }
 .footer{
     padding: 1%;
@@ -89,4 +92,6 @@ body{
 }
 .store{
   display: none;
+  text-align: center;
+  color: green;
 }
