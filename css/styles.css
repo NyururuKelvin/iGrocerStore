@@ -43,6 +43,9 @@ h2 span{
   background-color: white;
   border: whitesmoke solid
 }
+.deal img{
+  height: 250px;
+}
 button{
   display: none;
 }
@@ -59,4 +62,10 @@ button:focus{
 }
 .small{
   font-size: xx-small;
+}
+body{
+  overflow-x: hidden;
+}
+.g{
+  color: green;
 }
