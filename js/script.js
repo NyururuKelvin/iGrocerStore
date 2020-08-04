@@ -7,6 +7,11 @@ $(document).ready(function(){
         $('button').mouseenter(function(){
             $('button').css('background-color', 'green')
         })
+        // add this
+        $('button').mouseleave(function(){
+            $('button').css('background-color', 'red')
+        })
+        // ends here
     })
     $('.deal').mouseleave(function(){
         $(this).find('button').hide();
