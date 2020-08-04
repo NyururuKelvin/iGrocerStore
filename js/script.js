@@ -23,4 +23,8 @@ $(document).ready(function(){
     $('.img-container').mouseleave(function(){
         $(this).find('.store').hide();
     })
+
+    $('button').click(function(){
+        swal("Item added to cart", "click anywhere on the page to continue", "success");
+    })
 })
