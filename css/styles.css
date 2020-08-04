@@ -41,7 +41,6 @@ h2 span{
 }
 .deal{
   background-color: white;
-  padding: 3%;
   border: whitesmoke solid
 }
 button{
@@ -51,7 +50,6 @@ button{
     border: 1px solid;
     border-radius: 100px;
     padding: 4px 28px;
-    /* background-color: rgb(17, 143, 17); */
     color: white;
     flex: right;
     margin: 5px 0;
@@ -60,5 +58,5 @@ button:focus{
     outline: none !important;
 }
 .small{
-  font-size: smaller;
+  font-size: xx-small;
 }
