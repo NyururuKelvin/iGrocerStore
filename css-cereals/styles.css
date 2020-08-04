@@ -95,9 +95,19 @@ button{
     color: white;
     flex: right;
     margin: 5px 0;
+    /* display: none; */
 }
 button:focus{
     outline: none !important;
+}
+
+.card-body button:hover{
+    background-color: crimson;
+}
+
+button:hover{
+    background-color: crimson;
+    display: inline;
 }
 
 #store-item-name, .store-item-value{
