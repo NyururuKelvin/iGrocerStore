@@ -95,3 +95,9 @@ body{
   text-align: center;
   color: green;
 }
+.jumbotron{
+  background-color: green;
+  color: white;
+  text-align: center;
+  padding: 5%;
+}
