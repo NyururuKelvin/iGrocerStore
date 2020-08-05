@@ -13,6 +13,6 @@ $(document).ready(function(){
         $(this).find('.add-to-cart').hide();
     })
     $('.add-to-cart').click(function(){
-        alert("Item added to cart", "click anywhere on the page to continue", "success");
+        swal("Item added to cart", "click anywhere on the page to continue", "success");
     })
 })
