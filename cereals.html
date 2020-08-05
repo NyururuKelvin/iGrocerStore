@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="css-cereals/styles.css">
+    <link rel="stylesheet" href="css-cereals/cereals.css">
     <link rel="stylesheet" href="fontawesome-free-5.12.0-web/css/all.css">
     <link rel="stylesheet" href="fontawesome-free-5.12.0-web/css/all.min.css">
     <title>Cereals</title>
@@ -68,10 +68,40 @@
     <!-- End of header -->
     <!-- Navbar -->
     <br>
-    <!-- Products -->
-    <div class="wrapper">
-        <h1>Cereal</h1>
+    <div class="row">
+        <div class="col-10 mx-auto col-sm-6 text-center">
+          <h1 class="text"><span>i</span>Grocer <strong class="banner-title ">Cereals</strong></h1>
+        </div>
     </div>
+    <!--filter buttons -->
+    <div class="row">
+        <div class=" col-lg-8 mx-auto d-flex justify-content-around my-2 sortBtn flex-wrap">
+          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="all"> all</a>
+          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="cakes">Rice</a>
+          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="cupcakes">Wheat</a>
+          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="sweets">Nuts</a>
+          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="doughnuts">Maize</a>
+        </div>
+      </div>
+      <!-- search box -->
+      <div class="row">
+        <div class="col-10 mx-auto col-md-6">
+          <form>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend ">
+                <span class="input-group-text search-box" id="search-icon"><i class="fas fa-search"></i></span>
+              </div>
+              <input type="text" class="form-control" placeholder='item....' id="search-item">
+            </div>
+
+          </form>
+        </div>
+      </div>
+      <!--end of filter buttons -->
+    <!-- Products -->
+    <!-- <div class="wrapper">
+        <h1>Cereal</h1>
+    </div> -->
     <!-- Rice -->
     <div class="container">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
