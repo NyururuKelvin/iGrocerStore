@@ -20,6 +20,9 @@ body {
     height: 200px;
 }
 
+.text{
+    font-style: italic;
+}
 
 h2{
     margin-top: 20%;
