@@ -109,3 +109,9 @@ body{
 .fas .fa-shopping-cart{
   color: white;
 }
+a{
+  color: white;
+}
+a:hover{
+  color: black;
+}
