@@ -24,9 +24,10 @@ body {
     font-style: italic;
 }
 
-/* .btn-outline-secondary{
+.btn-outline-secondary{
     background-color: rgb(17, 143, 17);
-} */
+    color: white;
+}
 
 h2{
     margin-top: 20%;
@@ -95,6 +96,17 @@ h1{
     width: 285px;
     padding: 10px;
 } */
+.cart {
+    position: absolute;
+    min-height: 10rem;
+    background: whitesmoke;
+    top: 0;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+    background: rgba(255, 255, 255, 0.5);
+    width: 0;
+    overflow: hidden;
+}
 
 button{
     border: 1px solid rgb(17, 143, 17);
@@ -114,11 +126,18 @@ button:focus{
     background-color: crimson;
 }
 
-/* button:hover{
-    background-color: crimson;
-    display: inline;
-} */
+button{
+    display: none;
+}
 
 #store-item-name, .store-item-value{
       color: rgb(17, 143, 17);
 }
+
+/* .main{
+    background-image: url(../images-cereals/JTM1-.jpg);
+} */
+
+/* .color{
+    background-color: #d8d5cb;
+} */
