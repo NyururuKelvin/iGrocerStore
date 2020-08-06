@@ -1,17 +1,5 @@
-// $(document).ready(function(){
-//     $('.add-to-cart').mouseenter(function(){
-//         $(this).find('button').show();
-//         $('button').css('background-color', 'red');
-//         $('button').mouseenter(function(){
-//             $('button').css('background-color', 'green')
-//         })
-//     })
-//     $('.add-to-cart').mouseleave(function(){
-//         $(this).find('button').hide();
-//     })
-// })
-
 //show cart
+
 (function(){
     const cartInfo = document.getElementById('cart-info');
     const cart = document.getElementById('cart');
@@ -24,13 +12,13 @@
 //add items to the cart
 
 (function(){
-    const cartBtn = document.querySelectorAll('.add-to-cart');
+    const cartBtn = document.querySelectorAll('.store-item-icon');
 
     cartBtn.forEach(function(btn){
         btn.addEventListener('click',function(event){
             // console.log(event.target);
 
-            if(event.target.parentElement.classList.contains('.add-to-cart')){
+            if(event.target.parentElement.classList.contains('store-item-icon')){
                 let fullPath =
                 event.target.parentElement.previousElementSibling.src;
                 let pos = fullPath.indexOf('img') + 3;
@@ -71,12 +59,8 @@ const cart = document.getElementById('cart');
 const total = document.querySelector('.cart-total-container');
 
 cart.insertBefore(cartItem, total);
-swal('', 'item added to the cart', 'success');
+swal('item added to the cart', 'continue with your shopping', 'success');
 showTotals();
-$('.deliver').show()
-$('#checkout').click(function(){
-  swal ('Thank you', 'for shopping with us','success')
-})
 
             }
         })
@@ -101,6 +85,26 @@ $('#checkout').click(function(){
         document.querySelector('.item-total').textContent = finalMoney;
         document.getElementById('item-count').textContent = total.length;
     }
-
-
 })();
+
+// function for showing add to cart button
+
+$(document).ready(function(){
+    $('.card-body').mouseenter(function(){
+        $(this).find('.add-to-cart').show();
+        $('.add-to-cart').css('background-color', 'red');
+        $('.add-to-cart').mouseenter(function(){
+            $('.add-to-cart').css('background-color', 'green')
+        })
+        $('.add-to-cart').mouseleave(function(){
+            $('.add-to-cart').css('background-color', 'red')
+        })
+    })
+    $('.card-body').mouseleave(function(){
+        $(this).find('.add-to-cart').hide();
+    })
+    $('.add-to-cart').click(function(){
+        swal("Item added to cart", "continue with your shopping", "success");
+    })
+})
+
