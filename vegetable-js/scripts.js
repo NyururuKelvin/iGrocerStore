@@ -1,6 +1,6 @@
 $(document).ready(function(){
-    $('.veggies').mouseenter(function(){
-        $(this).find('.add-to-cart').show();
+    $('.class').mouseenter(function(){
+        $(this).find('.add-to-cart').show("slow");
         $('.add-to-cart').css('background-color', 'red');
         $('.add-to-cart').mouseenter(function(){
             $('.add-to-cart').css('background-color', 'green')
@@ -9,8 +9,8 @@ $(document).ready(function(){
             $('.add-to-cart').css('background-color', 'red')
         })
     })
-    $('.veggies').mouseleave(function(){
-        $(this).find('.add-to-cart').hide();
+    $('.class').mouseleave(function(){
+        $(this).find('.add-to-cart').hide("slow");
     })
     $('.add-to-cart').click(function(){
         swal("Item added to cart", "click anywhere on the page to continue", "success");

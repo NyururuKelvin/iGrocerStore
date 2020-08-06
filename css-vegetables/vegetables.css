@@ -79,3 +79,6 @@ button:focus{
 .foot{
     border-left: solid rgb(10, 10, 10) 1px;
 }
+button{
+    display: none;
+}
