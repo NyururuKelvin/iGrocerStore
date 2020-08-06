@@ -3,13 +3,13 @@
 $(document).ready(function(){
     $('.offer').mouseenter(function(){
         $(this).find('.icon').show('slow');
-        $('.icon').css('color', 'red');
+        $('.icon').css('background-color', 'crimson');
         $('.icon').mouseenter(function(){
-            $('.icon').css('color', 'green')
+            $('.icon').css('background-color', 'green')
         })
         // add this
         $('.icon').mouseleave(function(){
-            $('.icon').css('color', 'red')
+            $('.icon').css('background-color', 'crimson')
         })
         // ends here
     })
@@ -24,9 +24,9 @@ $(document).ready(function(){
         $(this).find('.store').hide('slow');
     })
 
-    // $('.add-to-cart').click(function(){
-    //     swal("Item added to cart", "click anywhere on the page to continue", "success");
-    // })
+    $('.icon').click(function(){
+        swal("Item added to cart", "Continue Shopping", "success");
+    })
 
     
 
