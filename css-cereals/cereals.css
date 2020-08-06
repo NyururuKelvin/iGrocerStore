@@ -151,6 +151,10 @@ button .icon{
       color: rgb(17, 143, 17);
 }
 
+.store-iten-icon button{
+    display: none;
+}
+
 /* .main{
     background-image: url(../images-cereals/JTM1-.jpg);
 } */

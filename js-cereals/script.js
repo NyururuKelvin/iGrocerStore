@@ -89,22 +89,22 @@ showTotals();
 
 // function for showing add to cart button
 
-$(document).ready(function(){
-    $('.card-body').mouseenter(function(){
-        $(this).find('.add-to-cart').show();
-        $('.add-to-cart').css('background-color', 'red');
-        $('.add-to-cart').mouseenter(function(){
-            $('.add-to-cart').css('background-color', 'green')
-        })
-        $('.add-to-cart').mouseleave(function(){
-            $('.add-to-cart').css('background-color', 'red')
-        })
-    })
-    $('.card-body').mouseleave(function(){
-        $(this).find('.add-to-cart').hide();
-    })
-    $('.add-to-cart').click(function(){
-        swal("Item added to cart", "continue with your shopping", "success");
-    })
-})
+// $(document).ready(function(){
+//     $('.card-body').mouseenter(function(){
+//         $(this).find('.add-to-cart').show();
+//         $('.add-to-cart').css('background-color', 'red');
+//         $('.add-to-cart').mouseenter(function(){
+//             $('.add-to-cart').css('background-color', 'green')
+//         })
+//         $('.add-to-cart').mouseleave(function(){
+//             $('.add-to-cart').css('background-color', 'red')
+//         })
+//     })
+//     $('.card-body').mouseleave(function(){
+//         $(this).find('.add-to-cart').hide();
+//     })
+//     $('.add-to-cart').click(function(){
+//         swal("Item added to cart", "continue with your shopping", "success");
+//     })
+// })
 
