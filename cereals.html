@@ -6,13 +6,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="css-cereals/cereals.css">
     <link rel="stylesheet" href="fontawesome-free-5.12.0-web/css/all.css">
-    <link rel="stylesheet" href="fontawesome-free-5.12.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./fontawesome-free-5.12.0-web/css/all.min.css">
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <title>Cereals</title>
 </head>
 <body>
     <!-- Navbar -->
-    <div class="container-fluid home">
+    <div class="container-fluid home" id="home">
         <div class="row">
             <div class="col-md-12">
                 <!-- <nav class="navbar navbar-light bg-light">
@@ -31,7 +31,7 @@
                     </a>
                     <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#home">HOME</a>
+                        <a class="nav-link" href="index.html">HOME</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#about">ABOUT</a>
@@ -41,10 +41,10 @@
                         CATEGORIES
                         </a>
                         <div class="dropdown-menu">
-                        <a class="dropdown-item" href="cereals.html" target="_blank">Cereals</a>
-                        <a class="dropdown-item" href="fruits.html" target="_blank">Fruits</a>
-                        <a class="dropdown-item" href="herbs.html" target="_blank">Herbs</a>
-                        <a class="dropdown-item" href="vegetables.html" target="_blank">Vegetables</a>
+                        <a class="dropdown-item" href="#home">Cereals</a>
+                        <a class="dropdown-item" href="fruits.html">Fruits</a>
+                        <a class="dropdown-item" href="herbs.html">Herbs</a>
+                        <a class="dropdown-item" href="vegetables.html">Vegetables</a>
                         </div>
                     <li class="nav-item">
                         <a class="nav-link" href="#partners">PARTNERS</a>
@@ -68,6 +68,14 @@
     </div>
     <!-- End of header -->
     <!-- Navbar -->
+    <!-- Cart -->
+    <div id="cart" class="cart">
+        <div class="cart-total-container d-flex justify-content-around text-capitalize mt-5">
+            <h5>total</h5>
+            <h5> $ <strong id="cart-total" class="font-weight-bold">0.00</strong> </h5>
+        </div>
+    </div>
+    <!-- /Cart -->
     <br>
     <div class="row">
         <div class="col-10 mx-auto col-sm-6 text-center">
@@ -76,13 +84,15 @@
     </div>
     <!--filter buttons -->
     <div class="row">
-        <div class=" col-lg-8 mx-auto d-flex justify-content-around my-2 sortBtn flex-wrap">
-          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="all"> all</a>
-          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="cakes">Rice</a>
-          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="cupcakes">Wheat</a>
-          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="sweets">Nuts</a>
-          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="doughnuts">Maize</a>
-        </div>
+        <div class="col-md-12 color">
+            <div class=" col-lg-8 mx-auto d-flex justify-content-around my-2 sortBtn flex-wrap">
+            <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="all"> all</a>
+            <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="cakes">Rice</a>
+            <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="cupcakes">Wheat</a>
+            <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="sweets">Nuts</a>
+            <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="doughnuts">Maize</a>
+            </div>
+        </div> 
       </div>
       <!-- search box -->
       <div class="row">
@@ -106,7 +116,7 @@
     <!-- Rice -->
     <div class="container">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
-            <div class="col">
+            <div class="col-10 col-sm-6 col-log-4 mx-auto my-3 store-item">
                 <div class="card ">
                     <div class="img-container">
                         <img src="./images-cereals/BasmatiWhiteRice.jpg" class="card-img-top store-img" alt="">
@@ -119,11 +129,11 @@
                             <h5 id="store-item-name">Basmati Rice 1 Kg</h5>
                             <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">15</strong></h5>
                         </div>
-                        <button class="add-to-cart" type="button">Add to Cart</button>
+                        <button class="add-to-cart" type="button"><i class='fas fa-shopping-cart'></i> Add to Cart</button>
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-10 col-sm-6 col-log-4 mx-auto my-3 store-item">
                 <div class="card ">
                     <div class="img-container">
                         <img src="./images-cereals/brown-rice1.jpg" class="card-img-top store-img" alt="">
@@ -136,11 +146,11 @@
                             <h5 id="store-item-name">Brown Rice 1 Kg</h5>
                             <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">15</strong></h5>
                         </div>
-                        <button class="add-to-cart" type="button">Add to Cart</button>
+                        <button class="add-to-cart" type="button"><i class='fas fa-shopping-cart'></i> Add to Cart</button>
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-10 col-sm-6 col-log-4 mx-auto my-3 store-item">
                 <div class="card ">
                     <div class="img-container">
                         <img src="./images-cereals/JasmineRice.jpg" class="card-img-top store-img" alt="">
@@ -153,11 +163,11 @@
                             <h5 id="store-item-name">Jasmine Rice 1 Kg</h5>
                             <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">15</strong></h5>
                         </div>
-                        <button class="add-to-cart" type="button">Add to Cart</button>
+                        <button class="add-to-cart" type="button"><i class='fas fa-shopping-cart'></i> Add to Cart</button>
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-10 col-sm-6 col-log-4 mx-auto my-3 store-item">
                 <div class="card ">
                     <div class="img-container">
                         <img src="./images-cereals/PishoriRice.png" class="card-img-top store-img" alt="">
@@ -170,7 +180,7 @@
                             <h5 id="store-item-name">Pishori Rice 1 Kg</h5>
                             <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">15</strong></h5>
                         </div>
-                        <button class="add-to-cart" type="button">Add to Cart</button>
+                        <button class="add-to-cart" type="button"><i class='fas fa-shopping-cart'></i> Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -181,7 +191,7 @@
     <!-- Wheat -->
     <div class="container">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
-            <div class="col">
+            <div class="col-10 col-sm-6 col-log-4 mx-auto my-3 store-item">
                 <div class="card ">
                     <div class="img-container">
                         <img src="./images-cereals/BulgurWheat.jpg" class="card-img-top store-img" alt="">
@@ -194,11 +204,11 @@
                             <h5 id="store-item-name">Bulgur Wheat 1 Kg</h5>
                             <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">17</strong></h5>
                         </div>
-                        <button class="add-to-cart" type="button">Add to Cart</button>
+                        <button class="add-to-cart" type="button"><i class='fas fa-shopping-cart'></i> Add to Cart</button>
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-10 col-sm-6 col-log-4 mx-auto my-3 store-item">
                 <div class="card ">
                     <div class="img-container">
                         <img src="./images-cereals/DurumWheat.jpg" class="card-img-top store-img" alt="">
@@ -211,11 +221,11 @@
                             <h5 id="store-item-name">Durum Wheat 1Kg</h5>
                             <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">16</strong></h5>
                         </div>
-                        <button class="add-to-cart" type="button">Add to Cart</button>
+                        <button class="add-to-cart" type="button"><i class='fas fa-shopping-cart'></i> Add to Cart</button>
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-10 col-sm-6 col-log-4 mx-auto my-3 store-item">
                 <div class="card ">
                     <div class="img-container">
                         <img src="./images-cereals/HardWhiteWheat.jpg" class="card-img-top store-img" alt="">
@@ -228,11 +238,11 @@
                             <h5 id="store-item-name">Hard White 1 Kg</h5>
                             <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">15</strong></h5>
                         </div>
-                        <button class="add-to-cart" type="button">Add to Cart</button>
+                        <button class="add-to-cart" type="button"><i class='fas fa-shopping-cart'></i> Add to Cart</button>
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-10 col-sm-6 col-log-4 mx-auto my-3 store-item">
                 <div class="card ">
                     <div class="img-container">
                         <img src="./images-cereals/SoftRedWheat.jpg" class="card-img-top store-img" alt="">
@@ -245,7 +255,7 @@
                             <h5 id="store-item-name">Soft Red 1 Kg</h5>
                             <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">16</strong></h5>
                         </div>
-                        <button class="add-to-cart" type="button">Add to Cart</button>
+                        <button class="add-to-cart" type="button"><i class='fas fa-shopping-cart'></i> Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -256,7 +266,7 @@
     <!-- Nuts -->
     <div class="container">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
-            <div class="col">
+            <div class="col-10 col-sm-6 col-log-4 mx-auto my-3 store-item">
                 <div class="card ">
                     <div class="img-container">
                         <img src="./images-cereals/AlmondNuts.jpg" class="card-img-top store-img" alt="">
@@ -269,11 +279,11 @@
                             <h5 id="store-item-name">Almond Nuts 1 Kg</h5>
                             <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">12</strong></h5>
                         </div>
-                        <button class="add-to-cart" type="button">Add to Cart</button>
+                        <button class="add-to-cart" type="button"><i class='fas fa-shopping-cart'></i> Add to Cart</button>
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-10 col-sm-6 col-log-4 mx-auto my-3 store-item">
                 <div class="card ">
                     <div class="img-container">
                         <img src="./images-cereals/cashew-nut.png" class="card-img-top store-img" alt="">
@@ -286,11 +296,11 @@
                             <h5 id="store-item-name">cashew Nut 1 Kg</h5>
                             <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">15</strong></h5>
                         </div>
-                        <button class="add-to-cart" type="button">Add to Cart</button>
+                        <button class="add-to-cart" type="button"><i class='fas fa-shopping-cart'></i> Add to Cart</button>
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-10 col-sm-6 col-log-4 mx-auto my-3 store-item">
                 <div class="card ">
                     <div class="img-container">
                         <img src="./images-cereals/HazelNuts.jpg" class="card-img-top store-img" alt="">
@@ -303,11 +313,11 @@
                             <h5 id="store-item-name">Hazel Nuts 1 Kg</h5>
                             <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">16</strong></h5>
                         </div>
-                        <button class="add-to-cart" type="button">Add to Cart</button>
+                        <button class="add-to-cart" type="button"><i class='fas fa-shopping-cart'></i> Add to Cart</button>
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-10 col-sm-6 col-log-4 mx-auto my-3 store-item">
                 <div class="card ">
                     <div class="img-container">
                         <img src="./images-cereals/PistachioNuts.jpeg" class="card-img-top store-img" alt="">
@@ -320,7 +330,7 @@
                             <h5 id="store-item-name">Pistachio 1 Kg</h5>
                             <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">15</strong></h5>
                         </div>
-                        <button class="add-to-cart" type="button">Add to Cart</button>
+                        <button class="add-to-cart" type="button"><i class='fas fa-shopping-cart'></i> Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -331,7 +341,7 @@
     <!-- Millet -->
     <div class="container">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
-            <div class="col">
+            <div class="col-10 col-sm-6 col-log-4 mx-auto my-3 store-item">
                 <div class="card ">
                     <div class="img-container">
                         <img src="./images-cereals/Finger-millet.jpg" class="card-img-top store-img" alt="">
@@ -344,11 +354,11 @@
                             <h5 id="store-item-name">Finger Millet 1 Kg</h5>
                             <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">10</strong></h5>
                         </div>
-                        <button class="add-to-cart" type="button">Add to Cart</button>
+                        <button class="add-to-cart" type="button"><i class='fas fa-shopping-cart'></i> Add to Cart</button>
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-10 col-sm-6 col-log-4 mx-auto my-3 store-item">
                 <div class="card ">
                     <div class="img-container">
                         <img src="./images-cereals/Foxtail-millet.jpg" class="card-img-top store-img" alt="">
@@ -361,11 +371,11 @@
                             <h5 id="store-item-name">Foxtail Millet 1 Kg</h5>
                             <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">15</strong></h5>
                         </div>
-                        <button class="add-to-cart" type="button">Add to Cart</button>
+                        <button class="add-to-cart" type="button"><i class='fas fa-shopping-cart'></i> Add to Cart</button>
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-10 col-sm-6 col-log-4 mx-auto my-3 store-item">
                 <div class="card ">
                     <div class="img-container">
                         <img src="./images-cereals/Little-Millet.jpg" class="card-img-top store-img" alt="">
@@ -378,11 +388,11 @@
                             <h5 id="store-item-name">Little Millet 1 Kg</h5>
                             <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">10</strong></h5>
                         </div>
-                        <button class="add-to-cart" type="button">Add to Cart</button>
+                        <button class="add-to-cart" type="button"><i class='fas fa-shopping-cart'></i> Add to Cart</button>
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-10 col-sm-6 col-log-4 mx-auto my-3 store-item">
                 <div class="card ">
                     <div class="img-container">
                         <img src="./images-cereals/Pearl-millet.jpg" class="card-img-top store-img" alt="">
@@ -395,7 +405,7 @@
                             <h5 id="store-item-name">Pearl Millet 1 Kg</h5>
                             <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">15</strong></h5>
                         </div>
-                        <button class="add-to-cart" type="button">Add to Cart</button>
+                        <button class="add-to-cart" type="button"><i class='fas fa-shopping-cart'></i> Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -406,7 +416,7 @@
     <!-- Maize -->
     <div class="container">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
-            <div class="col">
+            <div class="col-10 col-sm-6 col-log-4 mx-auto my-3 store-item">
                 <div class="card ">
                     <div class="img-container">
                         <img src="./images-cereals/white-maize.jpg" class="card-img-top store-img" alt="">
@@ -419,11 +429,11 @@
                             <h5 id="store-item-name">white Maize 1 Kg</h5>
                             <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">9</strong></h5>
                         </div>
-                        <button class="add-to-cart" type="button">Add to Cart</button>
+                        <button class="add-to-cart" type="button"><i class='fas fa-shopping-cart'></i> Add to Cart</button>
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-10 col-sm-6 col-log-4 mx-auto my-3 store-item">
                 <div class="card ">
                     <div class="img-container">
                         <img src="./images-cereals/YellowMaize.jpg" class="card-img-top store-img" alt="">
@@ -436,11 +446,11 @@
                             <h5 id="store-item-name">Yellow Maize 1 Kg</h5>
                             <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">8</strong></h5>
                         </div>
-                        <button class="add-to-cart" type="button">Add to Cart</button>
+                        <button class="add-to-cart" type="button"><i class='fas fa-shopping-cart'></i> Add to Cart</button>
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-10 col-sm-6 col-log-4 mx-auto my-3 store-item">
                 <div class="card ">
                     <div class="img-container">
                         <img src="./images-cereals/Maize.jpg" class="card-img-top store-img" alt="">
@@ -453,11 +463,11 @@
                             <h5 id="store-item-name">Corn 1 Kg</h5>
                             <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
                         </div>
-                        <button class="add-to-cart" type="button">Add to Cart</button>
+                        <button class="add-to-cart" type="button"><i class='fas fa-shopping-cart'></i> Add to Cart</button>
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-10 col-sm-6 col-log-4 mx-auto my-3 store-item">
                 <div class="card ">
                     <div class="img-container">
                         <img src="./images-cereals/BabyCorn.webp" class="card-img-top store-img" alt="">
@@ -470,7 +480,7 @@
                             <h5 id="store-item-name">Baby Corn 1 Kg</h5>
                             <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">15</strong></h5>
                         </div>
-                        <button class="add-to-cart" type="button">Add to Cart</button>
+                        <button class="add-to-cart" type="button"><i class='fas fa-shopping-cart'></i> Add to Cart</button>
                     </div>
                 </div>
             </div>
