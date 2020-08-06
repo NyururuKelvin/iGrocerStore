@@ -2,7 +2,7 @@
 
 $(document).ready(function(){
     $('.deal').mouseenter(function(){
-        $(this).find('.add-to-cart').show();
+        $(this).find('.add-to-cart').show('slow');
         $('.add-to-cart').css('background-color', 'red');
         $('.add-to-cart').mouseenter(function(){
             $('.add-to-cart').css('background-color', 'green')
@@ -14,14 +14,14 @@ $(document).ready(function(){
         // ends here
     })
     $('.deal').mouseleave(function(){
-        $(this).find('.add-to-cart').hide();
+        $(this).find('.add-to-cart').hide('slow');
     })
 
     $('.img-container').mouseenter(function(){
-        $(this).find('.store').show();
+        $(this).find('.store').show('slow');
     })
     $('.img-container').mouseleave(function(){
-        $(this).find('.store').hide();
+        $(this).find('.store').hide('slow');
     })
 
     $('.add-to-cart').click(function(){

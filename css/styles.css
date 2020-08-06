@@ -28,19 +28,19 @@ h1 span:nth-child(2){
     background-image: url(../images/905685.jpg);
   }
   25%{
-    background-image: url(../images/abe166a5-c101-4f3a-9ef5-94cdde810255.jpeg);
+    background-image: url(../images/Organic-Food-626x380.jpg);
   }
   50%{
-    background-image: url(../images/fruits.jpg);
+    background-image: url(../images-herbs/profile.jpg);
   }
   75%{
-    background-image: url(../images/veges.jpg);
+    background-image: url(../images/pef.jpg);
   }
 }
 .blur{
   width: 40%;
   height: 20vh;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.2);
   border-radius: 20px;
 }
 .partners img{
@@ -53,6 +53,10 @@ h1 span:nth-child(2){
     color: green;
     font-weight: bold;
     font-size: large;
+}
+#hot{
+  color: red;
+  font-size: large;
 }
 .footer{
     padding: 1%;
