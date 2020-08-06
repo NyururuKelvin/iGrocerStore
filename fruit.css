@@ -3,7 +3,7 @@ body{
     overflow-x: hidden;
 }
 .main{
-    background-image: url("../Fruit-images/background.jpg");
+    background-image: url("./images-fruits/cherries-2402449__340.jpg");
     height: 30vh;
     background-size: cover;
     text-align: center;
@@ -35,19 +35,19 @@ h1{
 .clear{
     clear: both;
 }
-.veggies{
+.fruit{
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
 }
-.veggies{
+.fruit{
     float: left;
     margin:0 10px 10px 0;
     width: 285px;
     padding: 10px;
 }
-.veggies img{
+.fruit img{
     display: block;
     margin: auto;
     width: 100%;
@@ -78,4 +78,7 @@ button:focus{
 }
 .foot{
     border-left: solid rgb(10, 10, 10) 1px;
+}
+button{
+    display: none;
 }
