@@ -10,41 +10,51 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="fontawesome-free-5.12.0-web/css/all.css">
+  <link rel="stylesheet" href="fontawesome-free-5.12.0-web/css/all.min.css">
   <link rel="stylesheet" href="./css/styles.css" type="text/css">
   <link rel="stylesheet" href="./css-herbs/herbs.css" type="text/css">
   <title>Herbs</title>
 </head>
 <body>
-  <div class="container-fluid home">
+  <div class="container-fluid home" id="home">
     <div class="row">
       <div class="col-md-12">
         <nav class="navbar navbar-expand-sm bg-success navbar-light fixed-top">
           <a class="navbar-brand" href="#">
           <img src="" alt="" style="width:70px;"></a>
           <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link" href="#home">HOME</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
             <li class="nav-item"><a class="nav-link" href="#about">ABOUT</a></li>
             <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="categories" id="navbardrop" data-toggle="dropdown">CATEGORIES</a>
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="cereals.html" target="_blank">Cereals</a>
-              <a class="dropdown-item" href="fruits.html" target="_blank">Fruits</a>
-              <a class="dropdown-item" href="herbs.html" target="_blank">Herbs</a>
-              <a class="dropdown-item" href="vegetables.html" target="_blank">Vegetables</a>
+              <a class="dropdown-item" href="cereals.html">Cereals</a>
+              <a class="dropdown-item" href="fruits.html">Fruits</a>
+              <a class="dropdown-item" href="#home">Herbs</a>
+              <a class="dropdown-item" href="vegetable.html">Vegetables</a>
             </div>
             <li class="nav-item"><a class="nav-link" href="#partners">PARTNERS</a></li>
             <li class="nav-item"><a class="nav-link" href="#contacts">CONTACT US</a></li>
           </ul>
+          <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+          <div id="cart-info" class="nav-info align-items-center cart-info d-flex justify-content-between mx-lg-5">
+            <button class="cart-info__icon mr-lg-3"><i class="fas fa-shopping-cart"></i></button>
+            <p class="mb-0 text-capitalize"><span id="item-count">0 </span> items - Ksh. <span class="item-total">0.00</span></p>
+          </div>
         </nav>
       </div>
-    </div> 
-    <h2><span>i-GrocerStore</span></h2>
-    <h6>'Your doorstep grocery store'</h6>
+    </div>
+    <div class="title"> 
+      <h2><span>i-GrocerStore</span></h2>
+      <h6>'Your doorstep grocery store'</h6>
+    </div>  
   </div>
   <!-- End of header -->
   <div class="wrapper">
     <h1>Herbs</h1>
-    <span><i class="shopping-cart"></i></span>
-    <div class="clear"></div>
   </div>
   <div class="container">
     <div class="herbs">
@@ -55,7 +65,7 @@
             <h3>Basil(mrihani)</h3>
             <p>Ksh 30/ Bunch</p>
             <div class="hover">
-              <button class="add-to-cart" type="button">Add to Cart</button>
+              <button class="add-to-cart" type="button"><i class='fas fa-shopping-cart'></i>Add to Cart</button>
             </div>
           </div>
         </div> 
@@ -64,7 +74,7 @@
             <img src="images-herbs/oregano.jpg" alt="a photo of oregano"><br>
             <h3>Oregano</h3>
             <p>Ksh 40/ Bunch</p>
-            <button class="add-to-cart" type="button">Add to Cart</button>
+            <button class="add-to-cart" type="button"><i class='fas fa-shopping-cart'></i>Add to Cart</button>
           </div>
         </div>  
         <div class="col-md-3">
@@ -72,7 +82,7 @@
             <img src="images-herbs/lemongrass.jpg" alt="a photo of lemongrass"><br>
             <h3>Lemongrass</h3>
             <p>Ksh 25/ Bunch</p>
-            <button class="add-to-cart" type="button">Add to Cart</button>
+            <button class="add-to-cart" type="button"><i class='fas fa-shopping-cart'></i>Add to Cart</button>
           </div>
         </div>
         <div class="col-md-3">
@@ -80,7 +90,7 @@
             <img src="images-herbs/sage.jpg" alt="a photo of sage"><br>
             <h3>Sage</h3>
             <p>Ksh 45/ Bunch</p>
-            <button class="add-to-cart" type="button">Add to Cart</button>
+            <button class="add-to-cart" type="button"><i class='fas fa-shopping-cart'></i>Add to Cart</button>
           </div>
         </div>
       </div>
@@ -90,7 +100,7 @@
             <img src="images-herbs/celery.jpg" alt="a photo of celery"><br>
             <h3>Celery</h3>
             <p>Ksh 155/ Bunch</p>
-            <button class="add-to-cart" type="button">Add to Cart</button>          
+            <button class="add-to-cart" type="button"><i class='fas fa-shopping-cart'></i>Add to Cart</button>          
           </div>
         </div>
         <div class="col-md-3">
@@ -98,7 +108,7 @@
             <img src="images-herbs/cori.jpg" alt="a photo of coriander"><br>
             <h3>Coriander(Dhania)</h3>
             <p>Ksh 45/ Bunch</p>
-            <button class="add-to-cart" type="button">Add to Cart</button>
+            <button class="add-to-cart" type="button"><i class='fas fa-shopping-cart'></i>Add to Cart</button>
           </div>
         </div>  
        <div class="col-md-3">
@@ -106,7 +116,7 @@
            <img src="images-herbs/mint.jpg" alt="a photo of mint"><br>
            <h3>Mint(nanaa)</h3>
            <p>Ksh 60/ Bunch</p>            
-           <button class="add-to-cart" type="button">Add to Cart</button>
+           <button class="add-to-cart" type="button"><i class='fas fa-shopping-cart'></i>Add to Cart</button>
          </div>
         </div>
         <div class="col-md-3">
@@ -114,7 +124,7 @@
             <img src="images-herbs/rosemary.jpg" alt="a photo of rosemary"><br>
             <h3>Rosemary</h3>
             <p>Ksh 25/ Bunch</p>
-            <button class="add-to-cart" type="button">Add to Cart</button>
+            <button class="add-to-cart" type="button"><i class='fas fa-shopping-cart'></i>Add to Cart</button>
           </div>
         </div>
       </div>
@@ -124,7 +134,7 @@
             <img src="images-herbs/thyme.jpg" alt="a photo of thyme"><br>
             <h3>Thyme</h3>
             <p>Ksh 55/ Bunch</p>
-            <button class="add-to-cart" type="button">Add to Cart</button>
+            <button class="add-to-cart" type="button"><i class='fas fa-shopping-cart'></i>Add to Cart</button>
           </div>
         </div>
         <div class="col-md-3">
@@ -132,7 +142,7 @@
             <img src="images-herbs/chamomile.jpg" alt="a photo of chamomile"><br>
             <h3>Chamomile</h3>
             <p>Ksh 45/ Bunch</p>
-            <button class="add-to-cart" type="button">Add to Cart</button>
+            <button class="add-to-cart" type="button"><i class='fas fa-shopping-cart'></i>Add to Cart</button>
           </div>
         </div>
         <div class="col-md-3">
@@ -140,7 +150,7 @@
             <img src="images-herbs/lavender.jpg" alt="a photo of lavender"><br>
             <h3>Lavender</h3>
             <p>Ksh 60/ Bunch</p>
-            <button class="add-to-cart" type="button">Add to Cart</button>
+            <button class="add-to-cart" type="button"><i class='fas fa-shopping-cart'></i>Add to Cart</button>
           </div>
         </div>
         <div class="col-md-3">
@@ -148,7 +158,7 @@
             <img src="images-herbs/tamarind.jpeg" alt="a photo of tamarind"><br>
             <h3>Tamarind(ukwaju)</h3>
             <p>Ksh 30 each</p>
-            <button class="add-to-cart" type="button">Add to Cart</button>
+            <button class="add-to-cart" type="button"><i class='fas fa-shopping-cart'></i>Add to Cart</button>
           </div>
         </div>
       </div>
@@ -158,7 +168,7 @@
             <img src="images-herbs/peppermint.jpg" alt="a photo of peppermint"><br>
             <h3>Peppermint</h3>
             <p>Ksh 70/ Bunch</p>
-            <button class="add-to-cart" type="button">Add to Cart</button>
+            <button class="add-to-cart" type="button"><i class='fas fa-shopping-cart'></i>Add to Cart</button>
           </div>
         </div>
        <div class="col-md-3">
@@ -166,7 +176,7 @@
            <img src="images-herbs/stevia.jpg" alt="a photo of stevia"><br>
            <h3>Stevia</h3>
            <p>Ksh 50/ Bunch</p>
-           <button class="add-to-cart" type="button">Add to Cart</button>
+           <button class="add-to-cart" type="button"><i class='fas fa-shopping-cart'></i>Add to Cart</button>
          </div>
        </div>
        <div class="col-md-3">
@@ -174,7 +184,7 @@
            <img src="images-herbs/aloe.jpg" alt="a photo of aloevera"><br>
            <h3>Aloe Vera</h3>
            <p>Ksh 170/ Bunch</p>
-           <button class="add-to-cart" type="button">Add to Cart</button>
+           <button class="add-to-cart" type="button"><i class='fas fa-shopping-cart'></i>Add to Cart</button>
          </div>
        </div>
        <div class="col-md-3">
@@ -182,7 +192,7 @@
            <img src="images-herbs/tumeric.jpeg" alt="a photo of tumeric"><br>
            <h3>Tumeric</h3>
            <p>Ksh 60 each</p>
-           <button class="add-to-cart" type="button">Add to Cart</button>
+           <button class="add-to-cart" type="button"><i class='fas fa-shopping-cart'></i>Add to Cart</button>
          </div>
       </div>
       </div>
@@ -192,7 +202,7 @@
             <img src="images-herbs/kaffirleaves.jpg" alt="a photo of kafirleaves"><br>
             <h3>Kafir Leaves<br>(majani ya limau)</h3>
             <p>Ksh 40/ Bunch</p>
-            <button class="add-to-cart" type="button">Add to Cart</button>
+            <button class="add-to-cart" type="button"><i class='fas fa-shopping-cart'></i>Add to Cart</button>
           </div>
         </div>
         <div class="col-md-3">
@@ -200,7 +210,7 @@
             <img src="images-herbs/curry.jpg" alt="a photo of curryleaves"><br>
             <h3>Curry Leaves<br>(majani ya binzani)</h3>
             <p>Ksh 70/ Bunch</p>
-            <button class="add-to-cart" type="button">Add to Cart</button>
+            <button class="add-to-cart" type="button"><i class='fas fa-shopping-cart'></i>Add to Cart</button>
           </div>
         </div>
         <div class="col-md-3">
@@ -208,7 +218,7 @@
             <img src="images-herbs/chives.jpg" alt="a photo of chives"><br>
             <h3>Chives<br>(kitunguu jani)</h3>
             <p>Ksh 30/ Bunch</p>
-            <button class="add-to-cart" type="button">Add to Cart</button>
+            <button class="add-to-cart" type="button"><i class='fas fa-shopping-cart'></i>Add to Cart</button>
           </div>
         </div>
         <div class="col-md-3">
@@ -216,7 +226,7 @@
             <img src="images-herbs/bayleaves.jpg" alt="a photo of bayleaves"><br>
             <h3>Bay Leaves<br>(majani bay)</h3>
             <p>Ksh 60/ Bunch</p>
-            <button class="add-to-cart" type="button">Add to Cart</button>
+            <button class="add-to-cart" type="button"><i class='fas fa-shopping-cart'></i>Add to Cart</button>
           </div>
         </div>
       </div>
@@ -226,7 +236,7 @@
             <img src="images-herbs/fenugreek.jpg" alt="a photo of fenugreek"><br>
             <h3>Fenugreek(Methi)</h3>
             <p>Ksh 50/ Bunch</p>
-            <button class="add-to-cart" type="button">Add to Cart</button>
+            <button class="add-to-cart" type="button"><i class='fas fa-shopping-cart'></i>Add to Cart</button>
           </div>
         </div>
         <div class="col-md-3">
@@ -234,7 +244,7 @@
             <img src="images-herbs/watercress.jpg" alt="a photo of watercress"><br>
             <h3>Watercress</h3>
             <p>Ksh 70/ Bunch</p>
-            <button class="add-to-cart" type="button">Add to Cart</button>
+            <button class="add-to-cart" type="button"><i class='fas fa-shopping-cart'></i>Add to Cart</button>
           </div>
         </div>
         <div class="col-md-3">
@@ -242,7 +252,7 @@
             <img src="images-herbs/beatroot.jpg" alt="a photo of beetroots"><br>
             <h3>Beetroot</h3>
             <p>Ksh 20 each</p>
-            <button class="add-to-cart" type="button">Add to Cart</button>
+            <button class="add-to-cart" type="button"><i class='fas fa-shopping-cart'></i>Add to Cart</button>
           </div>
         </div>
         <div class="col-md-3">
@@ -250,7 +260,7 @@
             <img src="images-herbs/fennel.jpg" alt="a photo of fennel"><br>
             <h3>Fennel</h3>
             <p>Ksh 40 each</p>
-            <button class="add-to-cart" type="button">Add to Cart</button>
+            <button class="add-to-cart" type="button"><i class='fas fa-shopping-cart'></i>Add to Cart</button>
           </div>
         </div>
       </div>
@@ -305,7 +315,6 @@
   </div>  
   <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
   crossorigin="anonymous"></script>
-  <script src="js/script.js"></script>
   <script src="js-herbs/herbs.js"></script>   
 </body>
 </html>

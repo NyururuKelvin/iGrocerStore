@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $('.herb').mouseenter(function(){
-        $(this).find('.add-to-cart').show();
+        $(this).find('.add-to-cart').show('slow');
         $('.add-to-cart').css('background-color', 'red');
         $('.add-to-cart').mouseenter(function(){
             $('.add-to-cart').css('background-color', 'green')
@@ -10,9 +10,9 @@ $(document).ready(function(){
         })
     })
     $('.herb').mouseleave(function(){
-        $(this).find('.add-to-cart').hide();
+        $(this).find('.add-to-cart').hide('slow');
     })
     $('.add-to-cart').click(function(){
-        alert("Item added to cart", "click anywhere on the page to continue", "success");
+        swal("Item added to cart", "click anywhere on the page to continue", "success");
     })
 })
