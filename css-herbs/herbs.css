@@ -60,3 +60,19 @@ body{
     color:whitesmoke;
     text-align: center;
 }
+.title h2{
+    margin-top: 170px;
+}
+
+.show-cart {
+    width: 18rem;
+    padding: 2rem 1.5rem;
+    transform: rotateY(-360deg);
+}
+/*.store-item-icon{
+    display: none;
+}*/
+
+.store-item-icon .fas{
+    color: rgb(17, 143,17);
+}

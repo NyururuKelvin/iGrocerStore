@@ -47,26 +47,93 @@
         </nav>
       </div>
     </div>
+    <div class="cart-total-container d-flex justify-content-around text-capitalize mt-5">
+      <h5>total</h5>
+      <h5> $ <strong id="cart-total" class="font-weight-bold">0.00</strong> </h5>
+    </div>  
     <div class="title"> 
       <h2><span>i-GrocerStore</span></h2>
       <h6>'Your doorstep grocery store'</h6>
     </div>  
   </div>
   <!-- End of header -->
+  <!-- Cart -->
+    <div id="cart" class="cart">
+      <!-- cart item -->
+    <div class="cart-item d-flex justify-content-between text-capitalize my-3">
+          <img src="./images-cart/AlmondNuts.jpg" class="img-fluid rounded-circle" id="item-img" alt="">
+          <div class="item-text">
+            <p id="cart-item-title" class="font-weight-bold mb-0">cart item</p>
+            <span>$</span>
+            <span id="cart-item-price" class="cart-item-price" class="mb-0">10.99</span>
+          </div>
+          <a href="#" id='cart-item-remove' class="cart-item-remove">
+            <i class="fas fa-trash"></i>
+          </a>
+      </div>
+        <!--end of  cart item -->
+        <!-- cart total -->
+        <div class="cart-total-container d-flex justify-content-around text-capitalize mt-5">
+          <h5>total</h5>
+          <h5> $ <strong id="cart-total" class="font-weight-bold">0.00</strong> </h5>
+        </div>
+        <!--end cart total -->
+        <!-- cart buttons -->
+        <div class="cart-buttons-container mt-3 d-flex justify-content-between">
+          <a href="#" id="clear-cart" class="btn btn-outline-secondary btn-black text-uppercase">clear cart</a>
+          <a href="#" class="btn btn-outline-secondary text-uppercase btn-pink">checkout</a>
+        </div>
+        <!--end of  cart buttons -->
+      <!-- <div class="cart-total-container d-flex justify-content-around text-capitalize mt-5">
+          <h5>total</h5>
+          <h5> $ <strong id="cart-total" class="font-weight-bold">0.00</strong> </h5>
+      </div> -->
+    </div>
+  <!-- /Cart -->
+  <!-- /Cart -->
+  <!-- <div id="cart" class="cart">
+    <div class="cart-total-container d-flex justify-content-around text-capitalize mt-5">
+      <h5>total</h5>
+      <h5> $ <strong id="cart-total" class="font-weight-bold">0.00</strong> </h5>
+    </div>
+    <div class="cart-buttons-container mt-3 d-flex justify-content-between">
+      <a href="#" id="clear-cart" class="btn btn-outline-secondary btn-black text-uppercase">clear cart</a>
+      <a href="#" class="btn btn-outline-secondary text-uppercase btn-pink">checkout</a>
+    </div>
+  </div> -->
   <div class="wrapper">
     <h1>Herbs</h1>
   </div>
   <div class="container">
     <div class="herbs">
       <div class="row">
+        <div class="card ">
+          <div class="img-container">
+              <img src="./images-herbs/basil.jpg" class="card-img-top store-img" alt="">
+              
+              <span class="store-item-icon">
+                  <i class="fas fa-shopping-cart"></i>
+              </span>
+          </div>
+          <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                  <h5 id="store-item-name">Basmati Rice 1 Kg</h5>
+                  <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">15</strong></h5>
+              </div>
+              <!-- <span class="store-iten-icon">
+                  <button class="add-to-cart" type="button"><i class='fas fa-shopping-cart'></i> Add to Cart</button>
+              </span> -->
+              <!-- <button class="add-to-cart" type="button"><i class='fas fa-shopping-cart'></i> Add to Cart</button> -->
+          </div>
+      </div>
         <div class="col-md-3">
           <div class="herb">
             <img src="images-herbs/basil.jpg" alt="a photo of basil"><br>
             <h3>Basil(mrihani)</h3>
             <p>Ksh 30/ Bunch</p>
-            <div class="hover">
-              <button class="add-to-cart" type="button"><i class='fas fa-shopping-cart'></i>Add to Cart</button>
-            </div>
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
           </div>
         </div> 
         <div class="col-md-3">
@@ -312,7 +379,7 @@
         </div>
       </div>
     </div>
-  </div>  
+  </div>
   <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
   crossorigin="anonymous"></script>
   <script src="js-herbs/herbs.js"></script>   
