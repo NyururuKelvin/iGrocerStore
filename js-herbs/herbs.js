@@ -1,21 +1,25 @@
+// function for showing add to cart button
+
 $(document).ready(function(){
-    $('.herb').mouseenter(function(){
-        $(this).find('.add-to-cart').show('slow');
-        $('.add-to-cart').css('background-color', 'red');
-        $('.add-to-cart').mouseenter(function(){
-            $('.add-to-cart').css('background-color', 'green')
+    $('.card').mouseenter(function(){
+        $(this).find('.store-item-icon .fas').show();
+        $('.store-item-icon .fas').css('color', 'red');
+        $('.store-item-icon .fas').mouseenter(function(){
+            $('.store-item-icon .fas').css('color', 'green')
         })
-        $('.add-to-cart').mouseleave(function(){
-            $('.add-to-cart').css('background-color', 'red')
+        $('.store-item-icon .fas').mouseleave(function(){
+            $('.store-item-icon .fas').css('color', 'red')
         })
     })
-    $('.herb').mouseleave(function(){
-        $(this).find('.add-to-cart').hide('slow');
+    $('.card').mouseleave(function(){
+        $(this).find('.store-item-icon .fas').hide();
     })
-    $('.add-to-cart').click(function(){
-        swal("Item added to cart", "Continue Shopping", "success");
+    $('.store-item-icon .fas').click(function(){
+        swal("Item added to cart", "continue with your shopping", "success");
     })
 })
+
+//show cart
 
 (function(){
     const cartInfo = document.getElementById('cart-info');
@@ -26,11 +30,14 @@ $(document).ready(function(){
     })
 })();
 
+//add items to the cart
+
 (function(){
     const cartBtn = document.querySelectorAll('.store-item-icon');
 
     cartBtn.forEach(function(btn){
         btn.addEventListener('click',function(event){
+            // console.log(event.target);
 
             if(event.target.parentElement.classList.contains('store-item-icon')){
                 let fullPath =
@@ -48,7 +55,8 @@ $(document).ready(function(){
                 let finalPrice = price.slice(1).trim();
                 item.price = finalPrice;
 
-                const cartItem = document.createElement('div');
+
+const cartItem = document.createElement('div');
     cartItem.classList.add(
         "cart-item", 
         "d-flex", 
@@ -58,6 +66,7 @@ $(document).ready(function(){
     cartItem.innerHTML =`          
             <img src="${item.img}" class="img-fluid rounded-circle" id="item-img" alt="">
             <div class="cart-item-text">
+
               <p id="cart-item-title" class="font-weight-bold mb-0">${item.name}</p>
               <span>$</span>
               <span id="cart-item-price" class="cart-item-price" class="mb-0">${item.price}</span>
@@ -98,8 +107,3 @@ showTotals();
         document.getElementById('item-count').textContent = total.length;
     }
 })();
-
-
-
-
-    
