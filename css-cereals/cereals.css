@@ -156,8 +156,13 @@ button .icon{
 }
 
 .store-item-icon .fas{
+<<<<<<< HEAD
     color: rgb(166, 219, 166);
     display: none;
+=======
+    color: rgb(17, 143, 17);
+    /* display: none; */
+>>>>>>> b745886eae0db5e13d13bb9be798195ce08e6ce0
 }
 
 /* .main{
