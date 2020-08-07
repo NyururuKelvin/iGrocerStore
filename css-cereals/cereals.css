@@ -157,7 +157,7 @@ button .icon{
 
 .store-item-icon .fas{
     color: rgb(166, 219, 166);
-    /* display: none; */
+    display: none;
 }
 
 /* .main{
