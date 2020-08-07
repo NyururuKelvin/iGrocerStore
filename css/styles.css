@@ -25,16 +25,16 @@ h1 span:nth-child(2){
 }
 @keyframes animate{
   0%,100%{
-    background-image: url(../images/905685.jpg);
+    background-image: url('../images/905685.jpg');
   }
   25%{
-    background-image: url(../images/Organic-Food-626x380.jpg);
+    background-image: url('../images/Organic-Food-626x380.jpg');
   }
   50%{
-    background-image: url(../images-herbs/profile.jpg);
+    background-image: url('../images/profile.jpg');
   }
   75%{
-    background-image: url(../images/pef.jpg);
+    background-image: url('../images/pef.jpg');
   }
 }
 .blur{
