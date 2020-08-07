@@ -151,6 +151,15 @@ button .icon{
       color: rgb(17, 143, 17);
 }
 
+.store-iten-icon button{
+    display: none;
+}
+
+.store-item-icon .fas{
+    color: rgb(166, 219, 166);
+    display: none;
+}
+
 /* .main{
     background-image: url(../images-cereals/JTM1-.jpg);
 } */

@@ -90,20 +90,20 @@ showTotals();
 // function for showing add to cart button
 
 $(document).ready(function(){
-    $('.card-body').mouseenter(function(){
-        $(this).find('.add-to-cart').show();
-        $('.add-to-cart').css('background-color', 'red');
-        $('.add-to-cart').mouseenter(function(){
-            $('.add-to-cart').css('background-color', 'green')
+    $('.card').mouseenter(function(){
+        $(this).find('.store-item-icon .fas').show();
+        $('.store-item-icon .fas').css('color', 'red');
+        $('.store-item-icon .fas').mouseenter(function(){
+            $('.store-item-icon .fas').css('color', 'green')
         })
-        $('.add-to-cart').mouseleave(function(){
-            $('.add-to-cart').css('background-color', 'red')
+        $('.store-item-icon .fas').mouseleave(function(){
+            $('.store-item-icon .fas').css('color', 'red')
         })
     })
-    $('.card-body').mouseleave(function(){
-        $(this).find('.add-to-cart').hide();
+    $('.card').mouseleave(function(){
+        $(this).find('.store-item-icon .fas').hide();
     })
-    $('.add-to-cart').click(function(){
+    $('.store-item-icon .fas').click(function(){
         swal("Item added to cart", "continue with your shopping", "success");
     })
 })
