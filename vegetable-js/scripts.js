@@ -1,18 +1,18 @@
 $(document).ready(function(){
     $('.class').mouseenter(function(){
-        $(this).find('.add-to-cart').show("slow");
-        $('.add-to-cart').css('background-color', 'red');
-        $('.add-to-cart').mouseenter(function(){
-            $('.add-to-cart').css('background-color', 'green')
+        $(this).find('.store-item-icon').show("slow");
+        $('.store-item-icon').css('background-color', 'red');
+        $('.store-item-icon').mouseenter(function(){
+            $('.store-item-icon').css('background-color', 'green')
         })
-        $('.add-to-cart').mouseleave(function(){
-            $('.add-to-cart').css('background-color', 'red')
+        $('.store-item-icon').mouseleave(function(){
+            $('.store-item-icon').css('background-color', 'red')
         })
     })
     $('.class').mouseleave(function(){
-        $(this).find('.add-to-cart').hide("slow");
+        $(this).find('.store-item-icon').hide("slow");
     })
-    $('.add-to-cart').click(function(){
+    $('.store-item-icon').click(function(){
         swal("Item added to cart", "continue shopping", "success");
     })
 })
